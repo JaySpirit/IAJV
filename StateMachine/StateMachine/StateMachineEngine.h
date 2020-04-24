@@ -23,7 +23,11 @@ public:
 	DirectionStateMachine currentDirectionState;
 
 	//Functions
+	//Constructor + Destructor
 	StateMachineEngine();
+	~StateMachineEngine();
+
+	//Process
 	void DisplayCurrentState();
 	void ChangeState();
 };

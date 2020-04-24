@@ -2,12 +2,14 @@
 
 int main() {
 
-	StateMachineEngine engine;
+	StateMachineEngine *engine = new StateMachineEngine();
 	while (true) {
 
-		engine.DisplayCurrentState();
-		engine.ChangeState();
+		engine->DisplayCurrentState();
+		engine->ChangeState();
 
 	}
+	
+	delete engine;
 	return 0;
 }

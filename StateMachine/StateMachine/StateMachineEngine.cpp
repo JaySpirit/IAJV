@@ -8,6 +8,10 @@ StateMachineEngine::StateMachineEngine()
 	this->currentDirectionState = EXIT;
 }
 
+StateMachineEngine::~StateMachineEngine()
+{
+}
+
 //Booleans used in both functions
 bool isAnystate = false;
 bool valideInput = true;
